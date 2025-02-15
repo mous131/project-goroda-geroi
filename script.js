@@ -31,4 +31,6 @@ menuButton.addEventListener('click', () => {
         menu.classList.remove('open');
     }
 });
+console.log(menuButton); // Должно вывести кнопку
+console.log(menu); // Должно вывести меню
 });
