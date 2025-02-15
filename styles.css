@@ -1,62 +1,90 @@
+/* Общие стили для всей страницы */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Шрифт */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем внутренние отступы */
+    background-color: #f4f4f4; /* Цвет фона страницы */
+    color: #333; /* Цвет текста */
+    line-height: 1.6; /* Межстрочный интервал */
 }
 
+/* Шапка сайта */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white; /* Белый текст */
+    padding: 20px 0; /* Отступы сверху и снизу */
+    text-align: center; /* Выравнивание текста по центру */
 }
 
+header h1 {
+    margin: 0; /* Убираем отступы вокруг заголовка */
+    font-size: 2.5em; /* Размер шрифта */
+}
+
+/* Навигационное меню */
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 10px 0; /* Отступы сверху и снизу */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Элементы списка в одну строку */
+    margin: 0 15px; /* Отступы между элементами */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: white; /* Белый текст */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold; /* Жирный шрифт */
 }
 
+nav ul li a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Секции */
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+    padding: 20px; /* Отступы внутри секции */
+    margin: 20px; /* Отступы снаружи секции */
+    background-color: #fff; /* Белый фон */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
 }
 
+section h2 {
+    color: #4CAF50; /* Зеленый цвет заголовка */
+    margin-top: 0; /* Убираем отступ сверху */
+}
+
+/* Картинки */
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
+    max-width: 100%; /* Максимальная ширина картинки */
+    height: auto; /* Автоматическая высота */
+    border-radius: 10px; /* Закругленные углы */
+    margin-top: 10px; /* Отступ сверху */
+    display: block; /* Блочный элемент */
+    margin-left: auto; /* Центрирование по горизонтали */
+    margin-right: auto; /* Центрирование по горизонтали */
 }
 
+/* Подвал */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-   
-    h1 {
-    background: linear-gradient(90deg, #4CAF50, #2196F3); /* Градиент от зеленого к синему */
-    color: white;
-    padding: 10px;
-    text-align: center;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень текста */
-
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 10px; /* Отступы внутри подвала */
+    background-color: #333; /* Темный фон */
+    color: #fff; /* Белый текст */
+    position: fixed; /* Фиксированное положение */
+    bottom: 0; /* Прижимаем к низу */
+    width: 100%; /* Ширина на всю страницу */
 }
+
+/* Ссылки */
+a {
+    color: #4CAF50; /* Зеленый цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
 }
