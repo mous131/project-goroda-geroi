@@ -104,16 +104,17 @@ a:hover {
 }
 
 #menu {
-    position: fixed;
+      position: fixed;
     top: 0;
     right: -300px;
     width: 300px;
     height: 100%;
-    background-color: #2E8B57;
-    color: white;
+    background-color: black; /* Чёрный фон */
+    color: white; /* Белый текст */
     transition: right 0.3s ease;
     z-index: 999;
     padding-top: 60px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
 #menu ul {
@@ -121,16 +122,17 @@ a:hover {
     padding: 0;
 }
 
-#menu ul li {
-    margin: 20px 0;
+#menu ul li a {
+    color: white; /* Белый текст */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 18px; /* Размер шрифта */
+    display: block; /* Блочный элемент */
+    padding: 10px 20px; /* Отступы внутри пунктов меню */
+    transition: background-color 0.3s ease; /* Плавное изменение фона */
 }
 
-#menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    padding: 10px 20px;
+#menu ul li a:hover {
+    background-color: #333; /* Тёмно-серый фон при наведении */
 }
 
 #menu ul li a:hover {
