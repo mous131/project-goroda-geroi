@@ -17,6 +17,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
   // Уведомление пользователя
   alert('Сообщение отправлено!');
+  });
   // Получаем элементы кнопки и меню
 const menuButton = document.getElementById('menuButton');
 const menu = document.getElementById('menu');
@@ -24,5 +25,10 @@ const menu = document.getElementById('menu');
 // Добавляем обработчик события на клик по кнопке
 menuButton.addEventListener('click', () => {
     menu.classList.toggle('open'); // Добавляем или убираем класс "open"
+});
+  document.addEventListener('click', (event) => {
+    if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+        menu.classList.remove('open');
+    }
 });
 });
