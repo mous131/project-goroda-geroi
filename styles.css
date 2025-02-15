@@ -134,7 +134,7 @@ a:hover {
 }
 
 #menu ul li a:hover {
-    background-color: #1E5A3A;
+    background-color: #000000;
 }
 
 #menu.open {
@@ -142,7 +142,7 @@ a:hover {
 }
 
 header {
-    background-color: #2E8B57;
+    background-color: #000000;
     color: white;
     padding: 20px 0;
     text-align: center;
