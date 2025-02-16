@@ -232,3 +232,43 @@ body {
   width: 100%;
   margin-top: 20px;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Минимальная высота страницы */
+}
+
+.container {
+  flex: 1; /* Растягиваем контейнер на всю высоту */
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  flex: 1; /* Основной контент занимает всё доступное пространство */
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Если блоки не помещаются, они переносятся на новую строку */
+}
+
+.contacts, .cities, .about {
+  text-align: center;
+  margin: 10px;
+}
