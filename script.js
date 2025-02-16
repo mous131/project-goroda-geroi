@@ -20,3 +20,13 @@ document.addEventListener('click', (event) => {
         console.log('Меню закрыто'); // Отладочный вывод
     }
 });
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const sliderInput = document.getElementById('time-slider');
+
+sliderInput.addEventListener('input', () => {
+  const value = sliderInput.value;
+  const slideWidth = slides[0].clientWidth;
+  const offset = -((value / 100) * (slides.length - 1) * slideWidth);
+  slider.style.transform = `translateX(${offset}px)`;
+});
