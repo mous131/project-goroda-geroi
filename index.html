@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Меню</title>
+  <title>Сайт с меню и фотографиями</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="menu">
+  <!-- Кнопка меню -->
+  <button class="menu-button" id="menu-button">Меню</button>
+
+  <!-- Выпадающее меню -->
+  <nav class="dropdown-menu" id="dropdown-menu">
     <ul>
       <li><a href="#">Главная</a></li>
       <li><a href="#">Города-герои</a></li>
@@ -15,5 +19,20 @@
       <li><a href="#">Контакты</a></li>
     </ul>
   </nav>
+
+  <!-- Рамки для фотографий -->
+  <div class="photo-container">
+    <div class="photo-frame">
+      <img src="photo1.jpg" alt="Фото 1">
+    </div>
+    <div class="photo-frame">
+      <img src="photo2.jpg" alt="Фото 2">
+    </div>
+    <div class="photo-frame">
+      <img src="photo3.jpg" alt="Фото 3">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
