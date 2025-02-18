@@ -3,8 +3,8 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Georgia', serif; /* Шрифт для газетного стиля */
-  background-color: #f9f9f9; /* Светлый фон */
+  font-family: 'Georgia', serif;
+  background-color: #f9f9f9;
 }
 
 /* Кнопка меню */
@@ -13,10 +13,10 @@ body, html {
   top: 10px;
   right: 10px;
   padding: 10px 15px;
-  background-color: #000; /* Чёрный цвет */
+  background-color: #000;
   color: white;
   border: none;
-  border-radius: 20px; /* Закруглённые углы */
+  border-radius: 20px;
   cursor: pointer;
   z-index: 1000;
   font-size: 16px;
@@ -26,10 +26,11 @@ body, html {
 .dropdown-menu {
   position: fixed;
   top: 0;
-  right: -300px; /* Начальное положение за пределами экрана */
-  width: 250px;
+  right: -100%; /* Начальное положение за пределами экрана */
+  width: 100%; /* Занимает всю ширину экрана */
+  max-width: 400px; /* Максимальная ширина меню */
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Чёрный цвет с прозрачностью */
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
   transition: right 0.3s ease; /* Анимация выезда */
@@ -49,7 +50,7 @@ body, html {
 .dropdown-menu ul li a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .dropdown-menu ul li a:hover {
@@ -76,8 +77,8 @@ body, html {
   overflow: hidden;
   width: 200px;
   height: 200px;
-  background-color: #fff; /* Белый фон внутри рамки */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для рамки */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .photo-frame img {
@@ -97,8 +98,8 @@ body, html {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff; /* Белый фон для контента */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для газетного эффекта */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .newspaper-container h1 {
@@ -108,7 +109,7 @@ body, html {
 }
 
 .article {
-  column-count: 2; /* Разделение текста на две колонки */
+  column-count: 2;
   column-gap: 40px;
   margin-top: 20px;
 }
