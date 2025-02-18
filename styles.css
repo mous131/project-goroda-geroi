@@ -37,6 +37,26 @@ body, html {
   z-index: 999;
 }
 
+/* Большая кнопка "На главную" */
+.home-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ffcc00;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #e6b800;
+}
+
 .dropdown-menu ul {
   list-style: none;
   margin: 0;
