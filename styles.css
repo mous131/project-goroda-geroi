@@ -143,3 +143,25 @@ body, html {
   font-size: 16px;
   line-height: 1.6;
 }
+/* Стили для названий городов */
+.city-name {
+  font-family: 'Playfair Display', serif; /* Красивый шрифт */
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase; /* Все буквы заглавные */
+  letter-spacing: 2px; /* Расстояние между буквами */
+  position: relative;
+}
+
+/* Дополнительный декоративный элемент (опционально) */
+.city-name::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #ffcc00;
+  margin: 10px auto 0;
+}
