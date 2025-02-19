@@ -100,7 +100,8 @@ body, html {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding-bottom: 20px; /* Отступ для текста */
+  display: flex;
+  flex-direction: column; /* Чтобы текст был под картинкой */
 }
 
 /* Фото внутри рамки */
@@ -117,7 +118,7 @@ body, html {
   font-weight: bold;
   color: #333; /* Тёмный текст */
   text-align: center;
-  margin-top: 10px;
+  margin: 10px 0; /* Отступы сверху и снизу */
   padding: 0 10px; /* Отступы по бокам */
 }
 
