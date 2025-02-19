@@ -82,7 +82,7 @@ body, html {
   right: 0; /* Меню выезжает на экран */
 }
 
-/* Рамки для фотографий */
+/* Контейнер для фото */
 .photo-container {
   display: flex;
   justify-content: center;
@@ -91,26 +91,40 @@ body, html {
   margin: 20px 0;
 }
 
+/* Рамка для фото */
 .photo-frame {
   border: 5px solid #333;
   border-radius: 10px;
   overflow: hidden;
   width: 200px;
-  height: 200px;
+  height: 250px; /* Увеличиваем высоту для текста */
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative; /* Для позиционирования текста */
 }
 
+/* Фото внутри рамки */
 .photo-frame img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.caption {
+/* Название города */
+.city-name {
+  position: absolute; /* Позиционируем текст поверх фото */
+  bottom: 10px; /* Отступ снизу */
+  left: 0;
+  right: 0;
   text-align: center;
-  font-size: 14px;
-  margin-top: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* Белый текст */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Тень для текста */
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
 }
 
 /* Газетный стиль */
@@ -142,50 +156,4 @@ body, html {
 .article p {
   font-size: 16px;
   line-height: 1.6;
-}
-/* Стили для названий городов */
-.city-name {
-  font-family: 'Playfair Display', serif; /* Красивый шрифт */
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin-top: 10px;
-  text-transform: uppercase; /* Все буквы заглавные */
-  letter-spacing: 2px; /* Расстояние между буквами */
-  position: relative;
-}
-
-/* Дополнительный декоративный элемент (опционально) */
-.city-name::after {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 2px;
-  background-color: #ffcc00;
-  margin: 10px auto 0;
-}
-.photo-frame {
-  border: 5px solid #333;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 200px;
-  height: 200px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding-bottom: 20px; /* Отступ для названия */
-}
-
-.photo-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.city-name {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-.photo-frame:hover .city-name {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
 }
