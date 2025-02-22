@@ -138,3 +138,49 @@ body, html {
   line-height: 1.6;
   padding: 0 10px;
 }
+/* Контейнер для страницы города */
+.city-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.city-container h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.city-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.city-content img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.city-info {
+  width: 50%;
+}
+
+.city-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.city-info p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
