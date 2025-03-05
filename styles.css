@@ -3,10 +3,13 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Georgia', serif;
+  font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #000000 50%, #ffcc00 50%);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+  color: white;
+  line-height: 1.6;
 }
 
 /* Кнопка меню */
@@ -247,9 +250,64 @@ body, html {
   margin-bottom: 10px;
   color: #000;
 }
-
+header, section, footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
 .article p {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
+}
+/* Стили для мобильных устройств (экран меньше 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Уменьшаем размер заголовка */
+    }
+
+    section {
+        padding: 10px; /* Уменьшаем отступы */
+        margin: 10px;
+    }
+
+    #menuButton {
+        padding: 8px 16px; /* Уменьшаем кнопку меню */
+        font-size: 14px;
+    }
+
+    .swiper-container {
+        height: 200px; /* Уменьшаем высоту слайдера */
+    }
+
+    footer {
+        font-size: 0.9em; /* Уменьшаем текст в подвале */
+    }
+}
+
+/* Стили для очень маленьких экранов (меньше 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em; /* Ещё меньше заголовок */
+    }
+
+    section {
+        padding: 5px; /* Минимальные отступы */
+        margin: 5px;
+    }
+
+    #menuButton {
+        padding: 5px 10px; /* Очень маленькая кнопка */
+        font-size: 12px;
+    }
+
+    .swiper-container {
+        height: 150px; /* Минимальная высота слайдера */
+    }
+
+    footer {
+        font-size: 0.8em; /* Очень маленький текст */
+    }
 }
